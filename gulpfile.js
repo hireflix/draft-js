@@ -249,12 +249,7 @@ gulp.task(
   }),
 );
 
-gulp.task(
-  'check-dependencies',
-  gulp.series(function() {
-    return gulp.src('package.json').pipe(gulpCheckDependencies());
-  }),
-);
+
 
 gulp.task(
   'watch',
@@ -273,7 +268,6 @@ gulp.task(
 gulp.task(
   'default',
   gulp.series(
-    'check-dependencies',
     'clean',
     gulp.parallel('modules', 'flow'),
     gulp.parallel('dist', 'dist:min'),

@@ -1,5 +1,5 @@
 {
-  "name": "draft-js",
+  "name": "@hireflix/draft-js",
   "description": "A React framework for building text editors.",
   "version": "0.11.7",
   "keywords": [
@@ -9,15 +9,18 @@
     "richtext"
   ],
   "homepage": "http://draftjs.org/",
-  "bugs": "https://github.com/facebook/draft-js/issues",
+  "bugs": "https://github.com/hireflix/draft-js/issues",
   "files": [
     "dist/",
     "lib/",
     "LICENSE"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "lib/Draft.js",
   "style": "dist/Draft.css",
-  "repository": "facebook/draft-js",
+  "repository": "hireflix/draft-js",
   "license": "MIT",
   "scripts": {
     "prepublish": "npm run build",
