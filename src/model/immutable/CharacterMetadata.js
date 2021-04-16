@@ -128,4 +128,8 @@ let pool: Map<Map<any, any>, CharacterMetadata> = Map([
 
 CharacterMetadata.EMPTY = EMPTY;
 
+CharacterMetadata.cleanUp = function cleanUp(config) {
+  pool = Map([[Map(defaultRecord), EMPTY]]);
+};
+
 module.exports = CharacterMetadata;
